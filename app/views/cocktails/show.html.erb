@@ -2,7 +2,8 @@
 
 
 <div class="row">
-  <div class="col totheight" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1536510648730-1dd9ea3768ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80)">
+  <div class="col totheight">
+    <%= cl_image_tag @cocktail.photo, crop: :fill %>
   </div>
   <div class="col totheight">
     <h1>🍸 <%=@cocktail.name %> 🍸</h1>
